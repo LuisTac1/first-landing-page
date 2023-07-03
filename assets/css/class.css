@@ -25,7 +25,7 @@
     height: 65px;
 }
 
-/* Abaixo desse codigo você pode apagar o body e reforçar a especificidade editando codigo html na paxta index */
+/* Below this code you can delete the body and strengthen specificity by editing html code in index file*/
 body .full-width {
     width: 100%;
     flex: 1 1 100%;

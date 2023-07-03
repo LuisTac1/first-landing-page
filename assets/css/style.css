@@ -235,16 +235,14 @@
         display: none;
     }
 
-
-    /* Solução para three line do professor não está funcionando */
-    /* close-menu-label::after {
-        content: '\269F';
+    .close-menu-label::after {
+        content: '☰';
         position: fixed;
         z-index: 2;
         top: 2rem;
         right: 2rem;
         background: var(--primary-color);
-        color: var(--color-light-gray);
+        color: var(--white-color);
         font-size: 3rem;
         line-height: 3rem;
         width: 3rem;
@@ -252,78 +250,19 @@
         text-align: center;
         padding: 0.5rem;
         cursor: pointer;
-    }
-
-    .close-menu:checked~.menu {
-        display: block;
-    } */
-
-
-    /* Minha solução para three line */
-    .close-menu-label {
-        display: flex;
-        flex-direction: column;
-        width: 5rem;
-        height: 5rem;
-        cursor: pointer;
-
-        position: fixed;
-        z-index: 2;
-        top: 2rem;
-        right: 2rem;
-        text-align: center;
-    }
-
-    .close-menu-label span {
-        border-radius: 10px;
-        height: 0.5rem;
-        margin: 0.5rem 0;
-        transition: 300ms;
-        background: var(--color-light-gray);
-
-    }
+      }
 
     .close-menu:checked~.menu {
         display: block;
     }
 
-
-    /* Exemplo do professor: tentando fazer o x (Não está funcionando corretamente)*/
-    /* .close-menu:checked~.close-menu-label::after {
-        content: 'x';
-        width: 100%;
-        height: 100%;
-        margin: center;
-        background: var(--primary-color);
-        
-    } */
-
-
-    /* Minha possivel melhor solução pro "X" (não funciona) */
-    /* .close-menu:checked~.span1::after {
-        width:50%;
-        transform-origin:bottom;
-        transform:rotatez(45deg) translate(8px,0px)
-    }
-
-    .close-menu:checked~.span2:nth-of-type(2)::after {
-        width:100%;
-        transform-origin:top;
-        transform:rotatez(-45deg)
-    }
-
-    .close-menu[type="checkbox"]:checked~.span3:nth-of-type(3)::after {
-        width: 50%;
-        transform-origin:bottom;
-        transform: translate(30px,-11px) rotatez(45deg);
-    } 
-    */
-
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+      }
 
     .menu-spacing {
         display: none;
     }
-
 
     h2 {
         font-size: 3.6rem;
